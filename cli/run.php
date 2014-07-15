@@ -3,7 +3,11 @@
 namespace Tomaj\Evostream;
 
 if ($argc < 3) {
-    echo "Usage "
+    echo '
+Send command to evostream servers
+
+Usage: run.php <server_or_servers_comma_separated> <commandName> <params>
+';
     die('need more configuration...');
 }
 
@@ -27,7 +31,7 @@ class Command
     public function run()
     {
         $config = $this->createConfig();
-        $evostream = new Tomaj\Evostream\Evostream(new Tomaj\Evostream\Protocol\HttpProtocol());
+        $evostream = new \Tomaj\Evostream\Evostream(new \Tomaj\Evostream\Protocol\HttpProtocol());
         $result = $evostream->addServer($this->server)
             ->runCommand($config);
 
