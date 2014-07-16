@@ -4,6 +4,13 @@ php-evostream
 Basic library for working with [evostream servers](https://evostream.com) api from php.
 You can control one or more servers together.
 
+[![Build Status](https://travis-ci.org/tomaj/php-evostream.svg?branch=master)](https://travis-ci.org/tomaj/php-evostream)
+
+[![Latest Unstable Version](https://poser.pugx.org/tomaj/php-evostream/v/unstable.svg)](https://packagist.org/packages/tomaj/php-evostream)
+[![Latest Stable Version](https://poser.pugx.org/tomaj/php-evostream/v/stable.svg)](https://packagist.org/packages/tomaj/php-evostream)
+[![License](https://poser.pugx.org/tomaj/php-evostream/license.svg)](https://packagist.org/packages/tomaj/php-evostream)
+
+
 How to install
 --------------
 
