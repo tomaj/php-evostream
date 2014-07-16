@@ -19,11 +19,11 @@ class Command
 
     private $arguments;
 
-    private $server;
+    private $servers;
 
-    public function __construct($server, $command, $arguments)
+    public function __construct($servers, $command, $arguments)
     {
-        $this->server = $server;
+        $this->servers = explode(',', $servers);
         $this->command = $command;
         $this->arguments = $arguments;
     }
@@ -32,7 +32,7 @@ class Command
     {
         $config = $this->createConfig();
         $evostream = new \Tomaj\Evostream\Evostream(new \Tomaj\Evostream\Protocol\HttpProtocol());
-        $result = $evostream->addServer($this->server)
+        $result = $evostream->addServers($this->servers)
             ->runCommand($config);
 
         echo "Result:\n";
