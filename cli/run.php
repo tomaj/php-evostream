@@ -13,7 +13,7 @@ Usage: run.php <server_or_servers_comma_separated> <commandName> <params>
 
 require_once dirname(__FILE__) . '/../vendor/autoload.php';
 
-class Command
+class EvostreamCli
 {
     private $command;
 
@@ -45,7 +45,7 @@ class Command
         $command = $this->command;
         $command[0] = strtoupper($command[0]);
 
-        $className = 'Tomaj\Evostream\Config\\' . $command;
+        $className = 'Tomaj\Evostream\Command\\' . $command;
         if (!class_exists($className)) {
             throw new \Exception("Invalid config {$this->command}");
         }
@@ -67,5 +67,5 @@ class Command
     }
 }
 
-$command = new Command($argv[1], $argv[2], array_slice($argv, 3));
+$command = new EvostreamCli($argv[1], $argv[2], array_slice($argv, 3));
 $command->run();

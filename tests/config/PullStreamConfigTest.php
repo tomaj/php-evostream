@@ -1,6 +1,6 @@
 <?php
 
-use Tomaj\Evostream\Config\PullStream;
+use Tomaj\Evostream\Command\PullStream;
 
 require dirname(__FILE__). '/../../vendor/autoload.php';
 
