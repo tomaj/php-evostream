@@ -26,7 +26,14 @@ class HttpProtocol implements ProtocolInterface
         curl_setopt($ch, CURLOPT_TIMEOUT, $this->timeout);
         $res = curl_exec($ch);
 
+        $curlErrno = curl_errno($ch);
+        $curlError = curl_error($ch);
+
         curl_close($ch);
+
+        if ($curlErrno > 0) {
+            throw new ProtocolException('Cannot connect to server: ' . $curlError);
+        }
 
         $result = json_decode($res);
         return $this->objectToArray($result);
