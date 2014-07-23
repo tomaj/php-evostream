@@ -22,7 +22,7 @@ How to use
 Run basic *version* command 
 
 ```
-$command = new \Tomaj\Evostream\Config\Version();
+$command = new \Tomaj\Evostream\Command\Version();
 $evostream = new \Tomaj\Evostream\Evostream(new \Tomaj\Evostream\Protocol\HttpProtocol());
 $result = $evostream->addServer('127.0.0.1:7777')
 	->runCommand($command);
@@ -35,7 +35,7 @@ if ($result->allOk()) {
 Or you can for example set *pullStream* command to multiple servers:
 
 ```
-$command = new \Tomaj\Evostream\Config\PullStream();
+$command = new \Tomaj\Evostream\Command\PullStream();
 $command->setUri('some stream url')
 	->setKeepAlive(true)
 	->setLocalStreamName('some local stream url')
@@ -66,7 +66,4 @@ Commands list
 Todo
 ----
 
-1. add other commands
-2. change configs to commands
-3. separate commands to groups (namespaces)
-4. implement telnet protocol
+1. implement telnet protocol

@@ -2,10 +2,10 @@
 
 namespace Tomaj\Evostream;
 
-use Tomaj\Evostream\Config\Config;
-use Tomaj\Evostream\Config\PullStream;
-use Tomaj\Evostream\Config\PushStream;
-use Tomaj\Evostream\Config\ConfigException;
+use Tomaj\Evostream\Command\Command;
+use Tomaj\Evostream\Command\PullStream;
+use Tomaj\Evostream\Command\PushStream;
+use Tomaj\Evostream\Command\CommandException;
 use Tomaj\Evostream\Protocol\ProtocolInterface;
 
 class Evostream
@@ -61,14 +61,14 @@ class Evostream
         return $this->runCommand($pushStream);
     }
 
-    public function runCommand(Config $config)
+    public function runCommand(Command $command)
     {
-        if (!$config->valid()) {
-            throw new ConfigException("Yout configuration for function '{$config->name()}' is invalid");
+        if (!$command->valid()) {
+            throw new CommandException("Your configuration for function '{$command->name()}' is invalid");
         }
         $result = new Result();
         foreach ($this->servers as $server) {
-            $res = $this->protocol->call($server, $config->name(), $config->getEncodedParams());
+            $res = $this->protocol->call($server, $command->name(), $command->getEncodedParams());
             $result->addResult($server, $res['status'], $res);
         }
         return $result;

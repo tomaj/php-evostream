@@ -1,7 +1,7 @@
 <?php
 
 use Tomaj\Evostream\Evostream;
-use Tomaj\Evostream\Config\PushStream;
+use Tomaj\Evostream\Command\PushStream;
 use Tomaj\Evostream\Protocol\DummyProtocol;
 
 require dirname(__FILE__) . '/../vendor/autoload.php';
@@ -66,7 +66,7 @@ class PushStreamCommandTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Tomaj\Evostream\Config\ConfigException
+     * @expectedException \Tomaj\Evostream\Command\CommandException
      */
     public function testPushStreamThrowExceptionOnInvalidConfig()
     {
