@@ -1,7 +1,7 @@
 {
     "name": "tomaj/php-evostream",
     "type": "library",
-    "description": "RTE processor.",
+    "description": "PHP library for command Evostrem servers.",
     "keywords": ["evostream", "php", "api", "video", "stream"],
     "license": "MIT",
     "require": {
