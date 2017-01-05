@@ -6,6 +6,10 @@ class RemoveConfig extends Command
 {
     protected $id;
 
+    protected $groupName;
+
+    protected $removeHlsHdsFiles;
+
     public function name()
     {
         return 'removeConfig';
@@ -13,6 +17,6 @@ class RemoveConfig extends Command
 
     public function valid()
     {
-        return isset($this->id) and $this->id > 0;
+        return (isset($this->id) && $this->id > 0) || (isset($this->groupName) && strlen($this->groupName) > 0);
     }
 }
