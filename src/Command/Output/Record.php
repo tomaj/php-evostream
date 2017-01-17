@@ -2,6 +2,16 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setLocalStreamName($localStreamName)
+ * @method setPathToFile($pathToFile)
+ * @method setType($type)
+ * @method setOverwrite($overwrite)
+ * @method setKeepAlive($keepAlive)
+ * @method setChunkLength($chunkLength)
+ * @method setWaitForIDR($waitForIDR)
+ * @method setWinQtCompat($winQtCompat)
+ */
 class Record extends Command
 {
     protected $localStreamName;
