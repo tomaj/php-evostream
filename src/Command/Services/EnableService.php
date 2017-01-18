@@ -2,6 +2,10 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setId($id)
+ * @method setEnable($enable)
+ */
 class EnableService extends Command
 {
     protected $id;

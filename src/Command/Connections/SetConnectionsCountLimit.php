@@ -2,6 +2,9 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setCount($count)
+ */
 class SetConnectionsCountLimit extends Command
 {
     protected $count;

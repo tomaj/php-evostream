@@ -2,6 +2,13 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setIp($ip)
+ * @method setPost($port)
+ * @method setProtocol($protocol)
+ * @method setSslCert($sslCert)
+ * @method setSslKey($sslKey)
+ */
 class CreateService extends Command
 {
     protected $ip;

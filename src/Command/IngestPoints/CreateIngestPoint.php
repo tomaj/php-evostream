@@ -2,6 +2,10 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setPrivateStreamName($privateStreamName)
+ * @method setPublicStreamName($publicStreamName)
+ */
 class CreateIngestPoint extends Command
 {
     protected $privateStreamName;

@@ -2,6 +2,11 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setId($id)
+ * @method setGroupName($groupName)
+ * @method setRemoveHlsHdsFiles($removeHlsHdsFiles)
+ */
 class RemoveConfig extends Command
 {
     protected $id;

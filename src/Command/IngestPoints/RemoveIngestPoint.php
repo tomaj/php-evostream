@@ -2,6 +2,9 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setPrivateStreamName($privateStreamName)
+ */
 class RemoveIngestPoint extends Command
 {
     protected $privateStreamName;

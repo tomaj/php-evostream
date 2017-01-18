@@ -2,6 +2,10 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setIn($in)
+ * @method setOut($out)
+ */
 class SetBandwidthLimit extends Command
 {
     protected $in;
