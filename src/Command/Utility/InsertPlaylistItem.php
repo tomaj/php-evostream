@@ -2,6 +2,13 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setPlaylistName($playlistName)
+ * @method setLocalStreamName($localStreamName)
+ * @method setInsertPoint($insertPoint)
+ * @method setSourceOffset($sourceOffset)
+ * @method setDuration($duration)
+ */
 class InsertPlaylistItem extends Command
 {
     protected $playlistName;

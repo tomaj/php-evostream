@@ -2,6 +2,9 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setKey($key)
+ */
 class ShutdownServer extends Command
 {
     protected $key;

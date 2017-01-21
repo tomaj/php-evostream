@@ -2,6 +2,9 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setAliasName($aliasName)
+ */
 class RemoveStreamAlias extends Command
 {
     protected $aliasName;

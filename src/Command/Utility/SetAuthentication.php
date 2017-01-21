@@ -2,6 +2,9 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setEnabled($enabled)
+ */
 class SetAuthentication extends Command
 {
     protected $enabled;

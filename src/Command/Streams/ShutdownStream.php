@@ -2,6 +2,11 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setId($id)
+ * @method setlocalStreamName($localStreamName)
+ * @method setPermanently($permanently)
+ */
 class ShutdownStream extends Command
 {
     protected $id;

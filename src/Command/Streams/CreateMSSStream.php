@@ -2,6 +2,21 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setLocalStreamNames($localStreamNames)
+ * @method setTargetFolder($targetFolder)
+ * @method setBandwidths($bandwidths)
+ * @method setGroupName($groupName)
+ * @method setPlaylistType($playlistType)
+ * @method setPlaylistLength($playlistLength)
+ * @method setManifestName($manifestName)
+ * @method setChunkLength($chunkLength)
+ * @method setChunkOnIDR($chunkOnIDR)
+ * @method setKeepAlive($chunkLength)
+ * @method setOverwriteDestination($overwriteDestination)
+ * @method setStaleRetentionCount($staleRetentionCount)
+ * @method setCleanupDestination($cleanupDestination)
+ */
 class CreateMSSStream extends Command
 {
     protected $localStreamNames;

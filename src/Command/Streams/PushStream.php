@@ -2,6 +2,20 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setUri($uri)
+ * @method setlocalStreamName($localStreamName)
+ * @method setTos($tos)
+ * @method setKeepAlive($keepAlive)
+ * @method setTargetStreamName($targetStreamName)
+ * @method setTargetStreamType($targetStreamType)
+ * @method setEmulateUserAgent($emulateUserAgent)
+ * @method setRtmpAbsoluteTimestamps($rtmpAbsoluteTimestamps)
+ * @method setSwfUrl($swfUrl)
+ * @method setPageUrl($pageUrl)
+ * @method setTcUrl($tcUrl)
+ * @method setTtl($ttl)
+ */
 class PushStream extends Command
 {
     protected $uri;

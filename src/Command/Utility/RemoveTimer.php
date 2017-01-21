@@ -2,6 +2,9 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setId($id)
+ */
 class RemoveTimer extends Command
 {
     protected $id;

@@ -2,6 +2,22 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setLocalStreamNames($localStreamNames)
+ * @method setTargetFolder($targetFolder)
+ * @method setBandwidths($bandwidths)
+ * @method setChunkBaseName($chunkBaseName)
+ * @method setChunkOnIDR($chunkOnIDR)
+ * @method setGroupName($groupName)
+ * @method setKeepAlive($keepAlive)
+ * @method setManifestName($manifestName)
+ * @method setOverwriteDestination($overwriteDestination)
+ * @method setPlaylistType($playlistType)
+ * @method setPlaylistLength($playlistLength)
+ * @method setStaleRetentionCount($staleRetentionCount)
+ * @method setCreateMasterPlaylist($createMasterPlaylist)
+ * @method setCleanupDestination($cleanupDestination)
+ */
 class CreateHDSStream extends Command
 {
     protected $localStreamNames;

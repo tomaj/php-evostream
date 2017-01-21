@@ -2,6 +2,9 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setValue($value)
+ */
 class SetTimer extends Command
 {
     protected $value;

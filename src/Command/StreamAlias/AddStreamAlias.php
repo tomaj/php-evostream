@@ -2,6 +2,10 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setLocalStreamName($localStreamName)
+ * @method setAliasName($aliasName)
+ */
 class AddStreamAlias extends Command
 {
     protected $localStreamName;

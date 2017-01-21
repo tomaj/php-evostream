@@ -2,6 +2,9 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setMediaFolder($mediaFolder)
+ */
 class RemoveStorage extends Command
 {
     protected $mediaFolder;

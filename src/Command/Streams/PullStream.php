@@ -2,6 +2,27 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setUri($uri)
+ * @method setKeepAlive($keepAlive)
+ * @method setlocalStreamName($localStreamName)
+ * @method setForceTcp($forceTcp)
+ * @method setTcUrl($tcUrl)
+ * @method setPageUrl($pageUrl)
+ * @method setSwfUrl($swfUrl)
+ * @method setRangeStart($rangeStart)
+ * @method setRangeEnd($rangeEnd)
+ * @method setTtl($ttl)
+ * @method setTos($tos)
+ * @method setRtcpDetectionInterval($rtcpDetectionInterval)
+ * @method setEmulateUserAgent($emulateUserAgent)
+ * @method setIsAudio($isAudio)
+ * @method setAudioCodecBytes($audioCodecBytes)
+ * @method setSpsBytes($spsBytes)
+ * @method setPpsBytes($ppsBytes)
+ * @method setSsmIp($ssmIp)
+ * @method setHttpProxy($httpProxy)
+ */
 class PullStream extends Command
 {
     protected $uri;

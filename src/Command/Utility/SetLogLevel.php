@@ -2,6 +2,9 @@
 
 namespace Tomaj\Evostream\Command;
 
+/**
+ * @method setLevel($level)
+ */
 class SetLogLevel extends Command
 {
     protected $level;
