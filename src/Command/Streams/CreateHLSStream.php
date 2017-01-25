@@ -3,7 +3,7 @@
 namespace Tomaj\Evostream\Command;
 
 /**
- * @method setLocalstreamnames($localStreamNames)
+ * @method setLocalStreamNames($localStreamNames)
  * @method setTargetFolder($targetFolder)
  * @method setKeepAlive($keepAlive)
  * @method setOverwriteDestination($overwriteDestination)
@@ -23,7 +23,7 @@ namespace Tomaj\Evostream\Command;
  */
 class CreateHLSStream extends Command
 {
-    protected $localstreamnames;
+    protected $localStreamNames;
 
     protected $targetFolder;
 
@@ -64,6 +64,6 @@ class CreateHLSStream extends Command
 
     public function valid()
     {
-        return strlen($this->localstreamnames) > 0 && strlen($this->targetFolder) > 0;
+        return strlen($this->localStreamNames) > 0 && strlen($this->targetFolder) > 0;
     }
 }
