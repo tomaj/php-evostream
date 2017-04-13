@@ -20,6 +20,7 @@ namespace Tomaj\Evostream\Command;
  * @method setChunkOnIDR($chunkOnIDR)
  * @method setDrmType($drmType)
  * @method setAESKeyCount($AESKeyCount)
+ * @method setHlsResume($hlsResume)
  */
 class CreateHLSStream extends Command
 {
@@ -56,6 +57,8 @@ class CreateHLSStream extends Command
     protected $drmType;
 
     protected $AESKeyCount;
+
+    protected $hlsResume;
 
     public function name()
     {
