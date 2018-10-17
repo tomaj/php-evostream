@@ -6,7 +6,7 @@ class HttpProtocol implements ProtocolInterface
 {
     private $timeout;
 
-    public function __construct($timeout = 3)
+    public function __construct($timeout = 10)
     {
         if (!extension_loaded('curl')) {
             throw new ProtocolException('HttpProtocol cannot be initialized. You need to enable curl extension in your php.');
